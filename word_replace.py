@@ -5,7 +5,7 @@
 def replace_word():
   # Объявление всех необходимых переменных
   default_phrase = "Hello world, i'm Ilya" 
-  is_word = True
+  is_word = False
   word_to_replace = ''
   word_replacement = ''
 
@@ -29,11 +29,11 @@ def replace_word():
   for word in default_phrase_list:
     if word_to_replace == word:
       word_to_replace = word
-      is_word = False
+      is_word = True
     else:
       pass
   # Проверка на наличие совпадений   
-  if is_word == True:
+  if is_word == False:
     print("There is no match")
   else: 
     replace_phrase = print(default_phrase.replace(word_to_replace, word_replacement))
